@@ -66,6 +66,7 @@
 
     function frame(step, body, idx) {
       root.replaceChildren();
+      root.style.maxWidth = step.wide ? "1180px" : "";
       const done = steps.slice(0, idx).filter(s => s.type !== "info").length;
       if (step.type !== "info" && step.type !== "expose") {
         root.append(h("p", { class: "count" }, `${done + 1} of ${counted}`));

@@ -26,8 +26,8 @@
       { id: "s2", type: "radio", q: "How old are you?", options: ["Under 22", "22 to 29", "30 to 40", "41 to 55", "Over 55"] },
       { id: "s3", type: "radio", q: "Before today, had you heard of a company called F1R3FLY?", options: ["Yes", "No", "Not sure"] },
 
-      // Part one: timed first impression on a static capture of the home page (the standard five-second-test method, run at ten seconds).
-      { id: "fold", type: "image", seconds: 10, src: "fold-desktop.png", srcMobile: "fold-mobile.png",
+      // Part one: timed first impression on a static capture of the home page proper (the section after the intro animation), the standard five-second-test method run at ten seconds.
+      { id: "home", type: "image", seconds: 10, wide: true, src: "home-desktop.png", srcMobile: "home-mobile.png",
         instruction: "Look at this web page. It disappears after ten seconds." },
       { id: "a1", type: "text", q: "What was this page about?", rows: 2 },
       { id: "a2", type: "text", q: "In your own words, what do you think this company does?", rows: 2 },

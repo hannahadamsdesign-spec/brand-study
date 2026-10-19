@@ -125,7 +125,7 @@ function sendRecall() {
   const rows = sh.getDataRange().getValues(), h = rows[0];
   const iEmail = h.indexOf("answers.email"), iRid = h.indexOf("rid"), iStart = h.indexOf("started");
   let iSent = h.indexOf("recallSent"); if (iSent < 0) { iSent = h.length; sh.getRange(1, iSent + 1).setValue("recallSent"); }
-  const base = "https://YOUR-GITHUB-PAGES-URL/name/recall/?r=";
+  const base = "https://hannahadamsdesign-spec.github.io/brand-study/name/recall/?r=";
   for (let r = 1; r < rows.length; r++) {
     const email = rows[r][iEmail], sent = rows[r][iSent];
     if (!email || sent) continue;
@@ -137,7 +137,7 @@ function sendRecall() {
 
   <h2>Where things live</h2>
   <ul>
-    <li>This site: the GitHub repo that serves it (fork it into the F1R3FLY-io org if you want it there).</li>
+    <li>This site: <a href="https://github.com/hannahadamsdesign-spec/brand-study">github.com/hannahadamsdesign-spec/brand-study</a>, served by GitHub Pages. Fork it into the F1R3FLY-io org if you want it there.</li>
     <li>The questions and the bias notes: <a href="questions.html">questions.html</a>, printable to PDF.</li>
     <li>The working brief and history: <code>09 AI Resources/Projects/F1R3FLY/NAMING-STUDY-BRIEF.md</code> and the 28 August call sheet.</li>
   </ul>

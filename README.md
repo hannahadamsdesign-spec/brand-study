@@ -20,6 +20,8 @@ Every channel gets its own tag so results can be read by source: `name/?c=signal
 
 ## Hosting
 
+Live at https://hannahadamsdesign-spec.github.io/brand-study/ (repo `hannahadamsdesign-spec/brand-study`).
+
 GitHub Pages from the `main` branch, root folder. No build step. Keep the repository name free of the brand name: respondents see the URL before they see the name.
 
 Built 19 October 2026 by Claude for Hannah Adams, F1R3FLY Industries.

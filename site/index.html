@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>A five-minute study about a company website</title>
+<link rel="stylesheet" href="../assets/study.css">
+</head>
+<body>
+<main id="study"><noscript>This study needs JavaScript.</noscript></main>
+<script src="../assets/config.js"></script>
+<script src="../assets/study.js"></script>
+<script>
+(function () {
+  const C = window.STUDY_CONFIG;
+  runStudy({
+    study: "site", version: 1,
+    steps: [
+      { id: "intro", type: "info", title: "A five-minute study about a company website",
+        body: "<p>Two parts. First you'll see a picture of a web page for ten seconds and answer a few quick questions. Then you'll open the real site, look around for up to two minutes, and answer a few more.</p>" +
+              "<p>There are no right answers. Your answers are anonymous unless you choose to leave an email at the end.</p>",
+        button: "Start" },
+      { id: "s1", type: "radio", q: "What best describes your work?",
+        options: ["Software developer or engineer", "Technical lead, architect, or CTO", "Product or program management", "Design or marketing", "Founder or executive", "Student", "Other"], last: "Other" },
+      { id: "s2", type: "radio", q: "How old are you?", options: ["Under 22", "22 to 29", "30 to 40", "41 to 55", "Over 55"] },
+      { id: "s3", type: "radio", q: "Before today, had you heard of a company called F1R3FLY?", options: ["Yes", "No", "Not sure"] },
+
+      // Part one: timed first impression on a static capture of the home page (the standard five-second-test method, run at ten seconds).
+      { id: "fold", type: "image", seconds: 10, src: "fold-desktop.png", srcMobile: "fold-mobile.png",
+        instruction: "Look at this web page. It disappears after ten seconds." },
+      { id: "a1", type: "text", q: "What was this page about?", rows: 2 },
+      { id: "a2", type: "text", q: "In your own words, what do you think this company does?", rows: 2 },
+      { id: "a3", type: "text", q: "Who do you think this is designed for?", rows: 2 },
+      { id: "a4", type: "text", q: "What action did the page want you to take?", rows: 2, required: false, placeholder: "Leave blank if you couldn't tell" },
+      { id: "a5", type: "scale", q: "How trustworthy did the page feel?", low: "Not at all", high: "Very" },
+
+      // Part two: the live site, untimed browse up to two minutes, then comprehension.
+      { id: "visit", type: "timer", q: "Now the real thing.", url: C.siteUrl, seconds: 120, minSeconds: 45,
+        body: "<p>Open the website in a new tab and look around the way you normally would. Come back to this tab when you're done, or when the clock runs out.</p>",
+        openLabel: "Open the website", doneLabel: "I'm done looking" },
+      { id: "b1", type: "text", q: "Now that you've looked around: in your own words, what does this company do?", rows: 3 },
+      { id: "b2", type: "text", q: "What do they offer? List anything you remember.", rows: 3 },
+      { id: "b3", type: "radio", q: "Which industry do you think this company is in?", shuffle: true, last: "Not sure",
+        options: ["Cloud or developer infrastructure", "Cybersecurity", "Enterprise data and databases", "Artificial intelligence or machine learning",
+                  "Cryptocurrency or blockchain", "Fintech or payments", "Consumer apps or social media", "Video games or entertainment",
+                  "Hardware or devices", "Consulting or professional services", "Something else", "Not sure"] },
+      { id: "b4", type: "check", q: "Which of these words describe this company, based on what you saw? Pick up to three.", max: 3, shuffle: true,
+        options: ["Trustworthy", "Serious", "Technical", "Clear", "Established", "Innovative", "Enterprise-grade", "Modern",
+                  "Vague", "Hype-driven", "Gimmicky", "Confusing", "Generic", "Risky", "Dated", "Playful"] },
+      { id: "b5", type: "scale", q: "How well did the site explain what the company does?", low: "Not at all", high: "Completely" },
+      { id: "b6", type: "radio", q: "Which of these would you do next, if anything?", shuffle: true, last: "Nothing",
+        options: ["Read the documentation", "Try a demo or sandbox", "Contact sales", "Look up the founders", "Close the tab", "Something else", "Nothing"] },
+      { id: "b7", type: "text", q: "Was anything unclear or confusing?", rows: 3, required: false },
+      { id: "email", type: "email", q: "Willing to talk for fifteen minutes?",
+        hint: "If you'd be up for a short conversation about what you saw, leave an email. We'll use it once, and delete it within thirty days.", button: "Finish" },
+    ],
+    thanks: "<p>That's everything. You can close this page.</p>",
+    emailNote: "If we get in touch, it will be once."
+  });
+})();
+</script>
+</body>
+</html>

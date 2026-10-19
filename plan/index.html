@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>F1R3FLY brand study: plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="plan.css">
+</head>
+<body>
+<header class="top">
+  <span class="brand">F1R3FLY brand study</span>
+  <nav><a class="on" href="./">Plan</a><a href="who.html">Who</a><a href="where.html">Where</a><a href="questions.html">Questions</a><a href="results.html">Results</a><a href="brands.html">Brand map</a></nav>
+</header>
+<main>
+  <div class="eyebrow">Draft for the 20 October meeting</div>
+  <h1>Two studies, built and ready to run</h1>
+  <p class="lede">Greg's 28 August call was "don't wait, do it." Both instruments are live on this site in preview mode. What they need from this meeting is five decisions, a channel owner each, and one Google Sheet to collect into.</p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="eyebrow">Study one</div>
+      <h3>The name</h3>
+      <p>Does F1R3FLY, or F1R3, land with the people who will choose or buy the product. One name per respondent, assigned at random. Ten questions, two minutes: can they say it, spell it from hearing it, remember it tomorrow, guess what it is, and say it in a meeting without feeling silly.</p>
+      <p><a class="btn" href="../name/?c=preview">Try it</a> &nbsp; <a class="btn ghost" href="../name/?cell=F1R3&c=preview">Force a cell</a></p>
+      <p class="small">Cells today: F1R3FLY, F1R3, FIRE, KAVRIX (a made-up control), F1R3LY. Add or remove one in <code>assets/config.js</code>.</p>
+    </div>
+    <div class="card">
+      <div class="eyebrow">Study two</div>
+      <h3>The website narrative</h3>
+      <p>Does f1r3fly.io say what the company does, and to whom. Part one is a ten-second look at the home page, then the standard first-impression questions. Part two is the live site for up to two minutes, then: what do they do, what do they offer, which industry, which words fit, how well it explained itself, what you'd do next.</p>
+      <p><a class="btn" href="../site/?c=preview">Try it</a></p>
+      <p class="small">Runs on a phone or a laptop; the ten-second capture matches the device.</p>
+    </div>
+  </div>
+
+  <h2>What this meeting has to settle</h2>
+  <p>Nothing goes out until Greg and Nicholas have answered these. Fill the form here, or say them out loud and Hannah fills it in.</p>
+  <form id="decisions" class="card">
+    <label>1. Who are we testing with first?</label>
+    <div class="row">
+      <label><input type="radio" name="who" value="developers 22-40"> Developers and technical decision-makers, 22 to 40 (recommended: Greg's "purchasing power by the time we need brand")</label>
+      <label><input type="radio" name="who" value="gen z end users"> Gen Z end users of F1R3Drive and F1R3Sky, 18 to 29</label>
+      <label><input type="radio" name="who" value="enterprise buyers"> Enterprise buyers (Nicholas's contacts)</label>
+    </div>
+    <label>2. Which names are in the set?</label>
+    <div class="row">
+      <label><input type="checkbox" name="names" value="F1R3FLY" checked> F1R3FLY</label>
+      <label><input type="checkbox" name="names" value="F1R3" checked> F1R3</label>
+      <label><input type="checkbox" name="names" value="FIRE" checked> FIRE (Fire Industries)</label>
+      <label><input type="checkbox" name="names" value="KAVRIX" checked> KAVRIX (control: made-up, pronounceable)</label>
+      <label><input type="checkbox" name="names" value="F1R3LY" checked> F1R3LY ("Firely")</label>
+      <label><input type="checkbox" name="names" value="FireLang"> FireLang (the language; really its own study)</label>
+    </div>
+    <label>3. What counts as winning? Rank the top three.</label>
+    <div class="row">
+      <select name="win1"><option value="">First</option><option>Spelling from audio</option><option>Category guess (not "crypto")</option><option>Pronunciation ease</option><option>24-hour recall</option><option>Comfort saying it in a meeting</option></select>
+      <select name="win2"><option value="">Second</option><option>Spelling from audio</option><option>Category guess (not "crypto")</option><option>Pronunciation ease</option><option>24-hour recall</option><option>Comfort saying it in a meeting</option></select>
+      <select name="win3"><option value="">Third</option><option>Spelling from audio</option><option>Category guess (not "crypto")</option><option>Pronunciation ease</option><option>24-hour recall</option><option>Comfort saying it in a meeting</option></select>
+    </div>
+    <p class="note">Hannah's recommendation: spelling and category first. They decide whether someone can find you, and whether they think you're a crypto shop.</p>
+    <label>4. What result would change your mind? One sentence each, written before any data exists. If the answer is "nothing," we skip the study.</label>
+    <input type="text" name="change_greg" placeholder="Greg: I'd reconsider F1R3FLY if…">
+    <input type="text" name="change_nicholas" placeholder="Nicholas: …" style="margin-top:8px">
+    <input type="text" name="change_hannah" placeholder="Hannah: …" style="margin-top:8px">
+    <label>5. Budget tier</label>
+    <div class="row">
+      <label><input type="radio" name="budget" value="zero"> Zero: our own lists and contacts (directional, 8 to 10 per cell)</label>
+      <label><input type="radio" name="budget" value="panel"> About $200: Prolific panel, 200 screened developers (decision-grade, 40 per cell)</label>
+      <label><input type="radio" name="budget" value="consultant"> Consultant-run</label>
+    </div>
+    <label>6. Who reviews the questions before anything goes out? (Greg's condition: a research professional, named.)</label>
+    <input type="text" name="reviewer" placeholder="Name, and who asks them">
+    <label>7. Who owns the recurring branding meeting invite?</label>
+    <input type="text" name="meeting_owner" placeholder="Lilia / Hannah / …">
+    <label>Filled in by</label>
+    <input type="text" name="by" placeholder="Your name">
+    <p style="margin-top:16px"><button class="btn" type="submit">Record decisions</button> <span class="small" id="dec-status"></span></p>
+  </form>
+
+  <h2>How it runs</h2>
+  <ol>
+    <li><b>Review.</b> Greg and Nicholas read <a href="questions.html">the questions and bias notes</a>. Kill or change anything. A named research professional reads them once.</li>
+    <li><b>Pilot, zero cost, this week.</b> Five to eight people, mixed. Watch two of them do it live. Fix wording.</li>
+    <li><b>Our own channels.</b> Each channel gets its own link (<a href="where.html">the channel list</a>) so results can be read by source and nobody can say the other side's sample cooked it.</li>
+    <li><b>Paid wave if the pilot earns it.</b> Prolific, about $200 for 200 screened developers, 40 per cell. That is where the numbers become decision-grade.</li>
+    <li><b>Read it</b> the way <a href="results.html">the scoring page</a> says: developers 22 to 40 first, then everyone, then by channel.</li>
+  </ol>
+
+  <h2>What it does not settle</h2>
+  <p>Trademark clearance, domain availability, search collision with Adobe Firefly and Firefly Aerospace, and how the name performs with a logo attached. Those are separate work. Research validates finalists; it does not pick the name. This study can rule a name out and put a number on the leetspeak spelling tax. It cannot tell us which name will build a brand, and we should say so before the results come in.</p>
+
+  <h2>Go live: one sheet, one script, one line</h2>
+  <p>Right now every page shows a yellow "Preview" bar and records nothing. Three steps turn recording on, and the three of you can read responses in a shared Google Sheet.</p>
+  <ol>
+    <li>Make a Google Sheet called <b>F1R3 brand study responses</b>. Share it with Greg and Nicholas.</li>
+    <li>In the sheet: Extensions, Apps Script. Paste the script below. Deploy, New deployment, Web app, execute as Me, access Anyone. Copy the web-app URL.</li>
+    <li>Paste that URL into <code>assets/config.js</code> as <code>collectUrl</code>, push. The preview bar disappears. Run one test with <code>?c=test</code> and delete the row.</li>
+  </ol>
+<pre><code>// Google Apps Script: appends every response as a row, one tab per study.
+const TABS = { name: "name", site: "site", recall: "recall", decision: "decisions" };
+function doPost(e) {
+  const rec = JSON.parse(e.postData.contents);
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const tab = TABS[rec.study] || "other";
+  let sh = ss.getSheetByName(tab); if (!sh) sh = ss.insertSheet(tab);
+  const flat = flatten(rec), keys = Object.keys(flat);
+  let header = sh.getLastRow() ? sh.getRange(1, 1, 1, sh.getLastColumn()).getValues()[0] : [];
+  const missing = keys.filter(k => header.indexOf(k) < 0);
+  if (missing.length) { header = header.concat(missing); sh.getRange(1, 1, 1, header.length).setValues([header]); }
+  sh.appendRow(header.map(k => flat[k] === undefined ? "" : Array.isArray(flat[k]) ? flat[k].join("; ") : flat[k]));
+  return ContentService.createTextOutput("ok");
+}
+function flatten(o, p, out) {
+  out = out || {};
+  for (const k in o) { const v = o[k], key = p ? p + "." + k : k;
+    if (v && typeof v === "object" && !Array.isArray(v)) flatten(v, key, out); else out[key] = v; }
+  return out;
+}
+// Optional: the next-day recall email. Add a daily time trigger on sendRecall.
+function sendRecall() {
+  const sh = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("name"); if (!sh) return;
+  const rows = sh.getDataRange().getValues(), h = rows[0];
+  const iEmail = h.indexOf("answers.email"), iRid = h.indexOf("rid"), iStart = h.indexOf("started");
+  let iSent = h.indexOf("recallSent"); if (iSent < 0) { iSent = h.length; sh.getRange(1, iSent + 1).setValue("recallSent"); }
+  const base = "https://YOUR-GITHUB-PAGES-URL/name/recall/?r=";
+  for (let r = 1; r < rows.length; r++) {
+    const email = rows[r][iEmail], sent = rows[r][iSent];
+    if (!email || sent) continue;
+    if (Date.now() - new Date(rows[r][iStart]).getTime() < 20 * 3600 * 1000) continue;
+    MailApp.sendEmail(email, "One question, ten seconds", "Yesterday you took a two-minute study about a company name. One question today: " + base + rows[r][iRid] + "\n\nThis is the only message you'll get. Your address is deleted within seven days.");
+    sh.getRange(r + 1, iSent + 1).setValue(new Date().toISOString());
+  }
+}</code></pre>
+
+  <h2>Where things live</h2>
+  <ul>
+    <li>This site: the GitHub repo that serves it (fork it into the F1R3FLY-io org if you want it there).</li>
+    <li>The questions and the bias notes: <a href="questions.html">questions.html</a>, printable to PDF.</li>
+    <li>The working brief and history: <code>09 AI Resources/Projects/F1R3FLY/NAMING-STUDY-BRIEF.md</code> and the 28 August call sheet.</li>
+  </ul>
+</main>
+<script src="../assets/config.js"></script>
+<script src="../assets/study.js"></script>
+<script>
+document.getElementById("decisions").addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const f = new FormData(this), rec = { study: "decision", version: 1, rid: studyUtil.uid(), started: new Date().toISOString(), answers: {} };
+  for (const [k, v] of f.entries()) { if (rec.answers[k] === undefined) rec.answers[k] = v; else rec.answers[k] = [].concat(rec.answers[k], v); }
+  const st = document.getElementById("dec-status");
+  const res = await studyUtil.send(rec);
+  st.textContent = res.preview ? "Preview mode: not recorded. Copy this and paste it into the chat or the sheet: " + JSON.stringify(rec.answers) : (res.ok ? "Recorded." : "Could not send; saved on this device.");
+});
+</script>
+</body>
+</html>

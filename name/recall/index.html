@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>One question</title>
+<link rel="stylesheet" href="../../assets/study.css">
+</head>
+<body>
+<main id="study"></main>
+<script src="../../assets/config.js"></script>
+<script src="../../assets/study.js"></script>
+<script>
+// The next-day recall question. The link carries ?r=<respondent id> so the answer joins the original response.
+runStudy({
+  study: "recall", version: 1,
+  extra: { original: window.studyUtil.qs.get("r") || "" },
+  steps: [
+    { id: "recall", type: "text", q: "Yesterday you saw a company name. Without looking anything up, type it as best you remember.", placeholder: "Your best attempt", multiline: false, caps: "characters" },
+    { id: "sure", type: "scale", q: "How sure are you?", low: "Pure guess", high: "Certain" },
+  ],
+  thanks: "<p>That's it. Thank you for coming back.</p>"
+});
+</script>
+</body>
+</html>
